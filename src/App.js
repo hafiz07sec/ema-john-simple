@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Inventory from './components/Inventory/Inventory';
 import NotFound from './components/NotFound/NotFound';
+import ProductDetail from './components/ProductDetail/ProductDetail';
 
 
 
@@ -24,8 +25,9 @@ function App() {
           <Route exact path="/" element={<Shop />}> </Route>
             <Route path="/shop" element={<Shop />}></Route>
             <Route path="/review" element={<Review />}></Route>
-
             <Route path="/inventory" element={<Inventory />}></Route>
+            <Route path="/product/:productKey" element={<ProductDetail></ProductDetail>}> </Route>
+
             <Route path="*" element={<NotFound />} />
          
         </Routes>
