@@ -27,7 +27,6 @@ function App() {
             <Route path="/review" element={<Review />}></Route>
             <Route path="/inventory" element={<Inventory />}></Route>
             <Route path="/product/:productKey" element={<ProductDetail></ProductDetail>}> </Route>
-
             <Route path="*" element={<NotFound />} />
          
         </Routes>
